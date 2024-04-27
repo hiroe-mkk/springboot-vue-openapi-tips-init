@@ -1,0 +1,9 @@
+plugins {
+    id("com.github.node-gradle.node") version "7.0.1"
+}
+
+// プロジェクトローカルに OS に応じた Node.js を自動ダウンロードする
+node {
+    download.set(true)
+    version.set("21.6.1")
+}
